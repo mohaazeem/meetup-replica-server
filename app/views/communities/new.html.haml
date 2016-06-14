@@ -1,0 +1,12 @@
+%h1 New Community
+= form_for :community, url: communities_path do |f|
+
+  = f.label :com_name, 'Name'
+  = f.text_field :com_name
+  %br/
+
+  = f.label :description
+  = f.text_area :description
+  %br/
+
+  = f.submit 'Create Community'
